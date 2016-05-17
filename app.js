@@ -7,8 +7,20 @@ devb.config(['$routeProvider',
             templateUrl: '/pages/main.html',
             controller: 'RouteController'
         }).
+        when('/aboutme', {
+            templateUrl: '/pages/aboutme.html',
+            controller: 'RouteController'
+        }).
         when('/portfolio', {
             templateUrl: '/pages/portfolio.html',
+            controller: 'RouteController'
+        }).
+        when('/projects', {
+            templateUrl: '/pages/projects.html',
+            controller: 'RouteController'
+        }).
+        when('/contact', {
+            templateUrl: '/pages/contact.html',
             controller: 'RouteController'
         }).
         otherwise({
