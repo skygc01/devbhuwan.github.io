@@ -1,4 +1,4 @@
-var devb = angular.module('devb', []);
+var devb = angular.module('devb', ['ngRoute']);
 
 devb.config(['$routeProvider',
     function($routeProvider) {
