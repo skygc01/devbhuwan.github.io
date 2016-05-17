@@ -4,11 +4,11 @@ devb.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
         when('/', {
-            templateUrl: 'main.html',
+            templateUrl: '/pages/main.html',
             controller: 'RouteController'
         }).
         when('/portfolio', {
-            templateUrl: 'portfolio.html',
+            templateUrl: '/pages/portfolio.html',
             controller: 'RouteController'
         }).
         otherwise({
