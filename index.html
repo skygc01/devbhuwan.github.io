@@ -21,7 +21,7 @@
     <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 </head>
 
-<body>
+<body ng-app="devb">
     <!-- Navbar -->
     <div class="navbar">
 
@@ -39,46 +39,46 @@
     </div>
     <!-- Grid main -->
     <div class="grid main">
-        <!-- Grid for the heading example -->
-        <div class="row">
-
-            <div class="col-4">
-                <h4><u>root$ ./me.sh</u></h4>
-                <span>
+        <div ng-view>
+            <div class="row">
+                <div class="col-4">
+                    <h4><u>root$ ./me.sh</u></h4>
+                    <span>
                 I'm self-motivated and hard working developer with a wide range of experience in software development.
                 </span>
-                <br>&nbsp;
-                <br>
-                <a href="https://twitter.com/DeveloperBhuwan" class="twitter-follow-button" data-show-count="false">Follow @DeveloperBhuwan</a>
-                <script>
-                    ! function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0],
-                            p = /^http:/.test(d.location) ? 'http' : 'https';
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = p + '://platform.twitter.com/widgets.js';
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, 'script', 'twitter-wjs');
-                </script>
-            </div>
+                    <br>&nbsp;
+                    <br>
+                    <a href="https://twitter.com/DeveloperBhuwan" class="twitter-follow-button" data-show-count="false">Follow @DeveloperBhuwan</a>
+                    <script>
+                        ! function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + '://platform.twitter.com/widgets.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'twitter-wjs');
+                    </script>
+                </div>
 
-            <div class="col-4">
-                <img src="resources/img/bhuwan.jpg" alt="DeveloperBhuwan" width="100%" height="100%" style="border-radius: 50%;">
-            </div>
+                <div class="col-4">
+                    <img src="resources/img/bhuwan.jpg" alt="DeveloperBhuwan" width="100%" height="100%" style="border-radius: 50%;">
+                </div>
 
-            <div class="col-4">
-                <h4><u>root$ ./work.sh</u></h4>
-                <span>
+                <div class="col-4">
+                    <h4><u>root$ ./work.sh</u></h4>
+                    <span>
                   Delivering quality solutions using a range of different technologies for desktop, mobile and web development,
                   such as Java , Java Swing, Java EE, Spring, Android, Angular JS.
                 </span>
-                <br>&nbsp;
-                <br>
+                    <br>&nbsp;
+                    <br>
+
+                </div>
 
             </div>
-
         </div>
         <!-- Close the grid main -->
     </div>
@@ -113,6 +113,9 @@
         <!-- Foot text -->
         &copy; 2016 by <a href="./">Bhuwan Prasad Upadhyay</a>
     </div>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
